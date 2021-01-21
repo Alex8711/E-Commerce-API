@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "Name": "Apple"
+  },
+  {
+    "Id": 2,
+    "Name": "Sony"
+  },
+  {
+    "Id": 3,
+    "Name": "Cannon"
+  },
+  {
+    "Id": 4,
+    "Name": "Logitech"
+  },
+  {
+    "Id": 5,
+    "Name": "Amazon"
+  },
+  {
+    "Id": 6,
+    "Name": "Linksys"
+  },
+  {
+    "Id": 7,
+    "Name": "Corsair"
+  },
+  {
+    "Id": 8,
+    "Name": "EVGA"
+  },
+  {
+    "Id": 9,
+    "Name": "Kingston"
+  },
+  {
+    "Id": 10,
+    "Name": "Dell"
+  },
+  {
+    "Id": 11,
+    "Name": "MicroSoftware"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Airpods Wireless Bluetooth Headphones",
+    "Description": "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
+    "Price": 200,
+    "PictureUrl": "images/products/airpods.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "iPhone 11 Pro 256GB Memory",
+    "Description": "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
+    "Price": 150,
+    "PictureUrl": "images/products/phone.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Cannon EOS 80D DSLR Camera",
+    "Description": "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
+    "Price": 180,
+    "PictureUrl": "images/products/camera.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Sony Playstation 4 Pro White Version",
+    "Description": "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
+    "Price": 300,
+    "PictureUrl": "images/products/playstation.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Logitech G-Series Gaming Mouse",
+    "Description": "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+    "Price": 250,
+    "PictureUrl": "images/products/mouse.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Amazon Echo Dot 3rd Generation",
+    "Description": "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
+    "Price": 120,
+    "PictureUrl": "images/products/alexa.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Velop Whole Home Mesh Wifi",
+    "Description": "An interconnected series of nodes that ensures complete signal coverage to all your devices",
+    "Price": 10,
+    "PictureUrl": "images/products/velopMesh.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Corsair Gaming Void RGB Elite Wireless Premium Gaming Headset",
+    "Description": "Immerse yourself in the action with the Corsair VOID RGB Elite wireless, with custom-tuned 50mm neodymium audio drivers delivering 7.1 surround sound on PC",
+    "Price": 8,
+    "PictureUrl": "images/products/headset.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 7
+  },
+  {
+    "Name": "Sony Playstation 5",
+    "Description": "Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio, and an all-new generation of incredible PlayStation games",
+    "Price": 15,
+    "PictureUrl": "images/products/ps5.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "EVGA GeForce RTX 3080 Ultra Gaming",
+    "Description": "EVGA GeForce RTX 3080 FTW3 ULTRA GAMING, 10G-P5-3897-KR, 10GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate.",
+    "Price": 18,
+    "PictureUrl": "images/products/rtx3080.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 8
+  },
+  {
+    "Name": "Sony X800H 65-inch 4K HDR LED Android Smart TV",
+    "Description": "Step into a new world of 4K HDR colour, contrast, and clarity. See beautiful pictures, rich with real world detail and texture, powered by our 4K HDR processor X1",
+    "Price": 15,
+    "PictureUrl": "images/products/sonyTV.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "HyperX Alloy Origins Mechanical Gaming Keyboard",
+    "Description": "The HyperX Alloy Origins is a compact, sturdy keyboard featuring custom HyperX mechanical switches designed to give gamers the best blend of style, performance, and reliability",
+    "Price": 16,
+    "PictureUrl": "images/products/hyperxKeyboard.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 9
+  },
+  {
+    "Name": "New Alienware 27 Gaming Monitor - AW2720HF",
+    "Description": "A 27 inch IPS gaming monitor with a blazing 240Hz refresh rate and true 1ms response time. Featuring AMD FreeSync technology for effortlessly smooth gaming",
+    "Price": 14,
+    "PictureUrl": "images/products/alienwareMonitor.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Xbox Series X",
+    "Description": "THE FASTEST,MOST POWERFUL XBOX EVER",
+    "Price": 250,
+    "PictureUrl": "images/products/xbox.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 11
+  },
+  {
+    "Name": "Amazon Core Red Boots",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 189.99,
+    "PictureUrl": "images/products/boot-core2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Amazon Core Purple Boots",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 199.99,
+    "PictureUrl": "images/products/boot-core1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Kingston Angular Purple Boots",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 150,
+    "PictureUrl": "images/products/boot-ang2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 9
+  },
+  {
+    "Name": "Kingston Angular Blue Boots",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 180,
+    "PictureUrl": "images/products/boot-ang1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 9
+  }
+]

@@ -18,6 +18,7 @@
 
     <ItemGroup>
       <Folder Include="Database\SeedData" />
+      <Folder Include="wwwroot\images\products" />
     </ItemGroup>
 
 

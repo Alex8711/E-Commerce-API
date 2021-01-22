@@ -49,6 +49,7 @@ namespace E_Commerce_API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

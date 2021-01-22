@@ -12,9 +12,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+
+    public class ProductsController : BaseApiController
     {
         /*private readonly IProductRepository _repo;*/
 

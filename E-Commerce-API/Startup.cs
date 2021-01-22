@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using E_Commerce_API.Database;
+using E_Commerce_API.Helper;
 using E_Commerce_API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +32,8 @@ namespace E_Commerce_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+            services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddDbContext<AppDbContext>(x => x.UseMySql(_config["DbContext:ConnectionString"]));
         }

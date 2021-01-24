@@ -1,4 +1,5 @@
 ﻿using E_Commerce_API.Database;
+using E_Commerce_API.Errors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce_API.Controllers
@@ -15,6 +16,13 @@ namespace E_Commerce_API.Controllers
         public ActionResult GetNotFoundRequest()
         {
             
+            var thing = _context.Products.Find(42);
+
+            if (thing == null) 
+            {
+                return NotFound(new ApiResponse(404));
+            }
+
             return Ok();
         }
         
@@ -31,7 +39,7 @@ namespace E_Commerce_API.Controllers
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
-            return BadRequest();
+            return BadRequest(new ApiResponse(400));
         }
         
         [HttpGet("badrequest/{id}")]

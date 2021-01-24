@@ -4,9 +4,11 @@ using System.Threading.Tasks;
 using AutoMapper;
 using E_Commerce_API.Database;
 using E_Commerce_API.Dtos;
+using E_Commerce_API.Errors;
 using E_Commerce_API.Models;
 using E_Commerce_API.Services;
 using E_Commerce_API.Specifications;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -41,11 +43,14 @@ namespace E_Commerce_API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse),StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
             var product = await _productsRepo.GetEntityWithSpec(spec);
 
+            if (product == null) return NotFound(new ApiResponse(404));
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 

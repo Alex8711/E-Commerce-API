@@ -14,11 +14,14 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
+      <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="client\src\actions" />
+      <Folder Include="client\src\components" />
       <Folder Include="Database\SeedData" />
       <Folder Include="wwwroot\images\products" />
     </ItemGroup>

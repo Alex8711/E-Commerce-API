@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 
 
 namespace E_Commerce_API
@@ -28,9 +29,22 @@ namespace E_Commerce_API
           
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
-            services.AddDbContext<AppDbContext>(x => x.UseMySql(_config["DbContext:ConnectionString"]));
+            services.AddDbContext<AppDbContext>(x => x.UseMySql(_config["ConnectionStrings:DbContext"]));
+            services.AddSingleton<IConnectionMultiplexer>(c =>
+            {
+                var configuration = ConfigurationOptions.Parse(_config.
+                    GetConnectionString("Redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
             services.AddApplicationServices();
             services.AddSwaggerDocumentation();
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
 
         }
 
@@ -50,7 +64,7 @@ namespace E_Commerce_API
 
             app.UseRouting();
             app.UseStaticFiles();
-
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
 
             app.UseSwaggerDocumention();
